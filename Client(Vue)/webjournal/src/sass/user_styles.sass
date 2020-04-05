@@ -1,0 +1,155 @@
+@import "variables"
+
+.userCab
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    .user_info
+        font-family: "Baloo 2", sans-serif
+        h3
+            font-size: 23pt
+        p
+            font-size: 15pt
+        img
+            height: 30vh
+
+    .user_actions
+        .beta:after
+            content: "β"
+            margin: 0 5px 0 30px
+        .work:after
+            content: "W"
+            margin: 0 5px 0 30px
+        ul li
+            display: block
+            text-decoration: none
+            border: 1px solid $ligthBorder
+            padding: 10px 0 10px 20px
+            margin: 3px 0
+            border-radius: 5px
+            &:hover
+                cursor: pointer
+            a
+                font-size: 15pt
+                text-decoration: none
+                color: black
+
+.newArticleForm
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 0 40px
+    input, textarea
+        margin: 10px
+    button
+        background: $dark_blue
+        border: 0
+        border-radius: 5px
+        padding: 5px
+        color: $Ivory
+        font-size: 15px
+        &:hover
+            cursor: pointer
+    input
+        width: 60%
+    textarea
+        height: 300px
+        margin-top: 0
+    .textStyleBar
+        margin-bottom: 0
+        display: flex
+        flex-direction: row
+        border: 1px solid $ligthBorder
+        border-bottom: 0
+        margin: 0 10px
+        border-radius: 5px 5px 0 0
+        background: $Ivory
+        li
+            display: inline-block
+            text-decoration: none
+            padding: 5px 10px
+            margin: 0 2px
+            border-radius: 5px
+            &:hover
+                cursor: pointer
+                color: $Indigo
+
+#imageSetup
+    display: flex
+    flex-direction: column
+    border: 1px solid $ligthBorder
+    background: $Ivory
+    width: 200px
+    position: absolute
+    top: 260px
+    left: 210px
+    padding: 5px
+    input
+        width: 165px
+        margin: 10px
+    &:before, &:after
+        position: absolute
+        content: ''
+        left: 90px
+        top: -20px
+        border: 10px solid transparent
+        border-bottom: 10px solid $ligthBorder
+    &:after
+        border-bottom: 10px solid $Ivory
+        top: -19px
+    button
+        width: 40%
+        margin: auto
+        background: $dark_blue
+        border: 0
+        border-radius: 4px
+        color: $white
+        padding: 5px
+    #imageSize
+        display: flex
+        flex-direction: row
+        input
+            width: 30%
+
+.articlePreview
+    margin-top: 40px
+    padding: 20px
+    border: 1px solid $ligthBorder
+    overflow: hidden
+
+.userMainInfo
+    display: flex
+    flex-direction: row
+    border: 1px solid $ligthBorder
+    background: $Ivory
+    &:first-child
+        border-radius: 3px 3px 0 0
+    &:last-child
+        border-radius: 0 0 3px 3px
+    &:hover
+        opacity: 0.9
+        cursor: pointer
+    img
+        width: 100px
+        height: auto
+    .userInfo
+        display: flex
+        flex-direction: column
+        p
+            font-size: 15px
+            font-family: 'Baloo 2', sans-serif
+            &:first-child
+                font-size: 20px
+                font-weight: 600
+
+.userModel
+    img
+        height: 200px
+        width: auto
+    h3
+        font-family: 'Baloo 2', sans-serif
+        font-size: 30px
+        font-weight: 600
+    p
+        font-size: 20px
+

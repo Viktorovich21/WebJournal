@@ -1,0 +1,66 @@
+@import "variables"
+
+.publicationList
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    padding: 0
+    .publication
+        display: flex
+        flex-direction: column
+        font-family: "Baloo 2", cursive
+        width: 25vmax
+        height: 25vmax
+        border: 1px solid rgba(0,0,0,0.03)
+        &:hover
+            cursor: pointer
+            border: 0
+        div
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            flex-direction: row
+            justify-content: center
+        .hovered
+            background: $LightSeaPlusOpacity
+        h3
+            font-size: 25px
+            font-weight: 700
+            margin: 10px
+        span
+            overflow: hidden
+            font-size: 17px
+            font-weight: 500
+
+.fullPublication
+    width: 90%
+    margin-left: 5%
+    display: flex
+    flex-direction: column
+    font-family: "Baloo 2", cursive
+    .titlePub
+        display: flex
+        flex-direction: row
+        justify-content: center
+        h2
+            font-size: 30px
+        .starsPub
+            margin-left: 40px
+            font-size: 17pt
+            img
+                height: 15pt
+    .createPub
+        font-size: 14px
+        font-weight: 200
+    .fulltextPub
+        font-weight: 500
+        font-size: 20px
+    .publicationAuthor
+        display: flex
+        flex-direction: row
+        justify-content: center
+        border: 1px dotted $LightSeaPlusOpacity
+        &:hover
+            cursor: pointer
